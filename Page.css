@@ -1,0 +1,77 @@
+.box, .cbox { float: left; }
+#root { max-width: 960px; margin: 0 auto; }
+
+#box1 { width: 25%; }
+#box2 { width: 75%; }
+#box3 { width: 100%; }
+#box4 { width: 30%; }
+#box5 { width: 30%; }
+#box6 { width: 30%; }
+#box7 { width: 100%; }
+#box8 { width: 60%;}
+#box9 { width: 40%; }
+
+/* Laptop/Tablet (1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
+	#box1 { width: 100%; }
+	#box2 { width: 100%; }
+	#box3 { width: 100%; }
+	#box4 { width: 100%; padding:5px;}
+	#box5 { width: 100%; padding:5px;}
+	#box6 { width: 100%; padding:5px;}
+	#box7 { width: 100%; }
+	#box8 { width: 100%; padding:5px;}
+	#box9 { width: 100%; }
+	.underline{padding:5px;}.footer{ font-size:6px; text-align:center;}
+}
+
+/* Tablet Portrait (768px) */
+@media only screen and (min-width: 321px) and (max-width: 1024px) and (orientation: portrait) {
+	#box1 { width: 100%; }
+	#box2 { width: 100%; }
+	#box3 { width: 100%; }
+	#box4 { width: 95%; padding:5px;}
+	#box5 { width: 95%; padding:5px;}
+	#box6 { width: 95%; padding:5px;}
+	#box7 { width: 100%; }
+	#box8 { width: 100%; padding:5px; }
+	#box9 { width: 100%; }
+	.underline{padding:5px;}.footer{ font-size:6px; text-align:center;}
+	p { width: 95%; padding:5px;}
+	.img{ width: 100%; height:auto;}
+}
+
+/* Phone Landscape (480px) */
+@media only screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape) {
+	#box1 { width: 100%; }
+	#box2 { width: 100%; }
+	#box3 { width: 100%; }
+	#box4 { width: 95%; padding:5px;}
+	#box5 { width: 95%; padding:5px;}
+	#box6 { width: 95%; padding:5px;}
+	#box7 { width: 100%; }
+	.footer{ font-size:8px;}
+	#box8 { width: 100%; padding:5px; }
+	#box9 { width: 100%; }
+	.underline{padding:5px;}.footer{ font-size:6px; text-align:center;}
+	p { width: 95%; padding:5px;}
+	.img{ width: 100%; height:auto;}
+}
+
+/* Phone Portrait (320px) */
+@media only screen and (max-width: 320px) {
+	#box1 { width: 100%; }
+	#box2 { width: 100%; }
+	#box3 { width: 100%; }
+	#box4 { width: 95%; padding:5px;}
+	#box5 { width: 95%; padding:5px;}
+	#box6 { width: 95%; padding:5px;}
+	#box7 { width: 100%; }
+	#box8 { width: 100%; padding:5px; }
+	#box9 { width: 100%; }
+	.footer{ font-size:6px; text-align:center;}
+	.underline{padding:5px;}
+	p { width: 95%; padding:5px;}
+	.img{ width: 100%; height:auto;}
+}
+

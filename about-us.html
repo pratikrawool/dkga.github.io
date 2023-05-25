@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About Us - DKGA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="Page.css" />
+        <link rel="Stylesheet" href="style.css" />
+        <link rel="Stylesheet" href="fonts.css" />
+    <link rel="stylesheet" type="text/css" href="nav/styles.css" media="all" /> 
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">   
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery.min-1.8.2.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+    
+<!--<script src="nav/js/jquery-1.7.2.min.js"></script>
+ --><!--  javaScript -->
+<script>  
+<!--  // building select nav for mobile width only -->
+$(function(){
+	// building select menu
+	$('<select />').appendTo('nav');
+
+	// building an option for select menu
+	$('<option />', {
+		'selected': 'selected',
+		'value' : '',
+		'text': 'Choose Page...'
+	}).appendTo('nav select');
+
+	$('nav ul li a').each(function(){
+		var target = $(this);
+
+		$('<option />', {
+			'value' : target.attr('href'),
+			'text': target.text()
+		}).appendTo('nav select');
+
+	});
+
+	// on clicking on link
+	$('nav select').on('change',function(){
+		window.location = $(this).find('option:selected').val();
+	});
+});
+
+// show and hide sub menu
+$(function(){
+	$('nav ul li').hover(
+		function () {
+			//show its submenu
+			$('ul', this).slideDown(150);
+		}, 
+		function () {
+			//hide its submenu
+			$('ul', this).slideUp(150);			
+		}
+	);
+});
+//end
+</script>
+<!-- end -->
+    </head>
+    <body>
+       <div class="top-container">
+       <div class="header">
+       <div class="box" id="box1"><a href="index.html"><img src="images/logo.png" width="290" height="68" alt="DKG enterprise pvt. ltd."></a></div>
+            
+            <div class="box" id="box2">
+				<div id="fdw">
+				<!--nav-->
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="current"><a href="about-us.html">About Us</a></li>
+							<li>
+								<a href="#">Services</a>
+								<ul style="display: none;" class="sub_menu">
+									<li><a href="portfolio-management.html">Portfolio Management </a></li>
+                                    <li><a href="sales-and-marketing.html">Sales &amp; Marketing </a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="gfrp.html">GFRP</a>
+							</li>
+							<li><a href="contact-us.html">Contact Us</a></li>
+						</ul>
+					</nav>
+		</div><!-- end fdw -->
+            </div>
+            </div><!-- end header -->
+            </div><!-- end top-container -->
+       
+       
+       
+        <div id="root">
+            
+            
+          <!--<div class="box" id="box3">
+                <ul class="bxslider">
+                  <li><img src="images/pic1.jpg" /></li>
+                  <li><img src="images/pic2.jpg" /></li>
+                </ul>
+            
+          </div> -->
+            
+            	<!--<div class="line_box">
+                <p class="pone">Offering competitive loans and managing portfolio's is our forte.</p>
+                <p class="ptwo">We have a specialized team that can help customers from all walks of life to understand our offerings in an easy manner.</p>
+                </div> -->
+                
+<h2 class="underline">About Us</h2>   
+<img src="images/about.jpg" width="960" height="241" alt="about us banner" class="img"><br>
+<p>We're not afraid of the giants that stand besides us, because we've built our group with dedicated, enthusiastic and highly-skilled individuals who are eager to push the boundaries of customer service. We not only want to bring smile to our customers and investors alike, we want to build life-long relations. In this endeavor, we shall never hold back, never bend and never tire. We know what is expected of us and we go that extra mile to achieve perfection and maintain bonds with the people we work with. With 41 projects in Bangalore and 15 currently running in Mumbai, we have the right people with great experience in Housing & Real Estate projects.</p>
+            
+<p>Offering competitive loans and <strong>managing portfolio's</strong> is our forte. We have a specialized team that can help customers from all walks of life to understand our offerings in an easy manner, building their trust with us every step along the way. We are committed not just to our goals, but also the goals of our customers and investors, which is exactly why we aren't afraid to meet any and every challenge head-on. </p>
+
+<h2 class="underline ch2">The Team</h2>
+<p>Rome wasn't built in a day, and neither was our team. With a great mix of enthusiastic go-getters and calm-and-sensible hard workers, the DKGA Group is filled with the right people in the right positions.</p>
+
+<p>The team is headed by feisty and vivacious <span class="red">MD &amp; CEO, Ms Disha Chaudhary</span> who founded the company based on her immense experience in Real Estate and Infrastructure Projects. She has headed companies which has worked on implementing innovative ideas to reutilize waste household water, without compromising on structural safety. The residential projects she worked on came with a host of amenities like indoor swimming with child safety lock, kitchens with adjustable height platforms, gymnasiums, baby crèches and a whole lot more. </p>
+<p>Her vision is to help people manage their portfolios over a diverse range of offerings by leading a group of highly motivated people.</p>
+<strong>The other notable team members are -</strong> 
+<p><span>Rahul Jain</span> – Director</p>
+<p><span>Krishna Kunal</span> – Business Development Manager</p>
+<p><span>DevashishPatnaik</span>– Director</p>
+<p><span>Akshay Agarwal</span> – Head of Digital Marketing </p> 
+
+            
+        </div>
+        <div class="clear"></div>
+        <div class="foot">
+            <div class="footer">
+                <div class="box" id="box7">Copyright &copy; 2015 DKGA Enterprises Pvt. Ltd. All Rights Reserved. | Designed by <a href="http://webcreatic.com" target="_blank">WebCreatic</a></div>
+            </div>
+        </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+$('.bxslider').bxSlider({
+  mode: 'fade',
+  captions: true,
+  auto: true,
+});
+  });
+</script>        
+    </body>
+</html>

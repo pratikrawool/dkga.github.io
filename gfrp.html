@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Glass Fiber Reinforced Polymer - DKGA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="Page.css" />
+        <link rel="Stylesheet" href="style.css" />
+        <link rel="Stylesheet" href="fonts.css" />
+    <link rel="stylesheet" type="text/css" href="nav/styles.css" media="all" />    
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">   
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery.min-1.8.2.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+    
+<!--<script src="nav/js/jquery-1.7.2.min.js"></script>
+ --><!--  javaScript -->
+<script>  
+<!--  // building select nav for mobile width only -->
+$(function(){
+	// building select menu
+	$('<select />').appendTo('nav');
+
+	// building an option for select menu
+	$('<option />', {
+		'selected': 'selected',
+		'value' : '',
+		'text': 'Choose Page...'
+	}).appendTo('nav select');
+
+	$('nav ul li a').each(function(){
+		var target = $(this);
+
+		$('<option />', {
+			'value' : target.attr('href'),
+			'text': target.text()
+		}).appendTo('nav select');
+
+	});
+
+	// on clicking on link
+	$('nav select').on('change',function(){
+		window.location = $(this).find('option:selected').val();
+	});
+});
+
+// show and hide sub menu
+$(function(){
+	$('nav ul li').hover(
+		function () {
+			//show its submenu
+			$('ul', this).slideDown(150);
+		}, 
+		function () {
+			//hide its submenu
+			$('ul', this).slideUp(150);			
+		}
+	);
+});
+//end
+</script>
+<!-- end -->
+    </head>
+    <body>
+       <div class="top-container">
+       <div class="header">
+       <div class="box" id="box1"><a href="index.html"><img src="images/logo.png" width="290" height="68" alt="DKG enterprise pvt. ltd."></a></div>
+            
+            <div class="box" id="box2">
+				<div id="fdw">
+				<!--nav-->
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about-us.html">About Us</a></li>
+							<li>
+								<a href="#">Services</a>
+								<ul style="display: none;" class="sub_menu">
+									<li><a href="portfolio-management.html">Portfolio Management </a></li>
+                                    <li><a href="sales-and-marketing.html">Sales &amp; Marketing </a></li>
+								</ul>
+							</li>
+							<li class="current"><a href="gfrp.html">GFRP</a></li>
+							<li><a href="contact-us.html">Contact Us</a></li>
+						</ul>
+					</nav>
+		</div><!-- end fdw -->
+            </div>
+            </div><!-- end header -->
+            </div><!-- end top-container -->
+       
+       
+       
+        <div id="root">
+            
+            
+          <!--<div class="box" id="box3">
+                <ul class="bxslider">
+                  <li><img src="images/pic1.jpg" /></li>
+                  <li><img src="images/pic2.jpg" /></li>
+                </ul>
+            
+          </div> -->
+            
+            	<!--<div class="line_box">
+                <p class="pone">Offering competitive loans and managing portfolio's is our forte.</p>
+                <p class="ptwo">We have a specialized team that can help customers from all walks of life to understand our offerings in an easy manner.</p>
+                </div> -->
+                
+<h2 class="underline">Glass Fiber Reinforced Polymer</h2> 
+          <div class="box" id="box3">
+                <ul class="bxslider">
+                  <li><img src="images/gfrp/1.jpg" /></li>
+                  <li><img src="images/gfrp/2.jpg" /></li>
+                </ul>
+            
+          </div>
+ <p>We are producing India's first and only batch of 'Fiber Steel' which will revolutionize the way we think of building property projects. Already in use worldwide, but not found here in India. Steel dealers - target audience</p>
+
+<p>Costs fraction of what steel costs but lasts more than 1,000 years. It doesn't need water for strengthening post-construction, like traditional steel. No restrictions on height either. Our offering is a custom-made fiber steel, no need to cut, mold or mend anything. This will ensure lesser time to build and transport, lesser amount spend on workers etc.</p>
+
+<p>Imagine the profits to builders and society as a whole. There will be no need for redevelopment. Use that money to invest in other projects, instead!</p>
+
+<h2 class="underline ch2">Creating a Vision</h2>           
+          <p>Glass Fiber Reinforced Polymer is the next revolution in the Indian market. A product that will last a thousand years and costs a fraction of what traditional steel has cost in India historically, it is a game-changer for sure!</p>
+            
+<p>The product is a vision of DKGA Enterprises, as they start the production and distribution of this  amazing product, which will not only save cost of manufacturing Real Estate projects but also create properties that have guarantee to withstand averse conditions without falling apart.</p>
+
+<p>Corrosion of internal reinforcing steel is one of the chief causes of failure of concrete structures. Inevitably concrete will crack, creating a direct avenue for chlorides to begin oxidizing the steel rebar. Fiber Reinforced Polymers (FRP's) are a proven and successful alternative reinforcing that will give structures a longer service life. </p>
+
+<div class="box" id="box4">
+            	<div class="transbox">
+                <h3>Benefits of DKGA Fiberglass Polymer</h3>
+                    <ul>                
+                    <li>Impervious to Chloride Ion and low pH chemical attack</li>
+                    <li>Tensile strengths greater than steel</li>
+                    <li>1/4th the weight of steel</li>
+                    <li>Transparent to magnetic fields and radio frequencies</li>
+                    <li>Electrically non-conductive</li>
+                    <li>Thermally non-conductive</li>
+                    </ul>
+
+                </div>
+          </div>
+            
+            <div class="box" id="box5">
+             <div class="transbox">
+                <h3>Concrete Susceptible to Corrosion</h3>
+                    <ul>                
+                    <li>Waste Water Treatment</li>
+                    <li>Inadequate Concrete Cover</li>
+                    <li>Architectural Concrete Elements</li>
+                    <li>Historic Preservation</li>
+                    </ul>
+              </div>
+            </div>
+            
+            <div class="box" id="box6">
+            <div class="transbox">
+              <h3>Durability - Alkali Resistance</h3>
+
+                <p>One of the main concerns about the use of Glass FRP's is the potential to be degraded in the long term by the high pH environment of the concrete itself.</p><p> This phenomenon is analogous to an alkali silica reaction with certain types of aggregate. A great deal of research has been performed on this subject with the conclusion being that a properly designed and manufactured composite system of resin and glass can adequately protectthe glass fibers from degradation.</p>
+            </div></div>
+            
+    </div>
+        <div class="clear"></div>
+        <div class="foot">
+            <div class="footer">
+                <div class="box" id="box7">Copyright &copy; 2015 DKGA Enterprises Pvt. Ltd. All Rights Reserved. | Designed by <a href="http://webcreatic.com" target="_blank">WebCreatic</a></div>
+            </div>
+        </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+$('.bxslider').bxSlider({
+  mode: 'fade',
+  captions: true,
+  auto: true,
+});
+  });
+</script>        
+    </body>
+</html>

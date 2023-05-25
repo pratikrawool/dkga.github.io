@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DKGA Enterprises Pvt. Ltd.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="Page.css" />
+        <link rel="Stylesheet" href="style.css" />
+        <link rel="Stylesheet" href="fonts.css" />
+    <link rel="stylesheet" type="text/css" href="nav/styles.css" media="all" />   
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">   
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery.min-1.8.2.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
+    
+<!--<script src="nav/js/jquery-1.7.2.min.js"></script>
+ --><!--  javaScript -->
+<script>  
+<!--  // building select nav for mobile width only -->
+$(function(){
+	// building select menu
+	$('<select />').appendTo('nav');
+
+	// building an option for select menu
+	$('<option />', {
+		'selected': 'selected',
+		'value' : '',
+		'text': 'Choose Page...'
+	}).appendTo('nav select');
+
+	$('nav ul li a').each(function(){
+		var target = $(this);
+
+		$('<option />', {
+			'value' : target.attr('href'),
+			'text': target.text()
+		}).appendTo('nav select');
+
+	});
+
+	// on clicking on link
+	$('nav select').on('change',function(){
+		window.location = $(this).find('option:selected').val();
+	});
+});
+
+// show and hide sub menu
+$(function(){
+	$('nav ul li').hover(
+		function () {
+			//show its submenu
+			$('ul', this).slideDown(150);
+		}, 
+		function () {
+			//hide its submenu
+			$('ul', this).slideUp(150);			
+		}
+	);
+});
+//end
+</script>
+<!-- end -->
+    </head>
+    <body>
+       <div class="top-container">
+       <div class="header">
+       <div class="box" id="box1"><a href="index.html"><img src="images/logo.png" width="290" height="68" alt="DKG enterprise pvt. ltd."></a></div>
+            
+            <div class="box" id="box2">
+				<div id="fdw">
+				<!--nav-->
+					<nav>
+						<ul>
+							<li class="current"><a href="index.html">Home</a></li>
+							<li><a href="about-us.html">About Us</a></li>
+							<li>
+								<a href="#">Services</a>
+								<ul style="display: none;" class="sub_menu">
+									<li><a href="portfolio-management.html">Portfolio Management </a></li>
+                                    <li><a href="sales-and-marketing.html">Sales &amp; Marketing </a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="gfrp.html">GFRP</a>
+							</li>
+							<li><a href="contact-us.html">Contact Us</a></li>
+						</ul>
+					</nav>
+		</div><!-- end fdw -->
+            </div>
+            </div><!-- end header -->
+            </div><!-- end top-container -->
+       
+       
+       
+        <div id="root">
+            
+            
+          <div class="box" id="box3">
+                <ul class="bxslider">
+                  <li><img src="images/pic1.jpg" /></li>
+                  <li><img src="images/pic2.jpg" /></li>
+                </ul>
+            
+          </div>
+            
+            	<div class="line_box">
+                 
+                <p class="pone">Offering competitive loans and managing portfolio's is our forte.</p>
+                <p class="ptwo">We have a specialized team that can help customers from all walks of life to understand our offerings in an easy manner.</p>
+                <div class="clear"></div>
+               <a href="about-us.html" class="button link">View More</a>
+                </div>
+                
+                <div class="space"></div><div class="space"></div>
+            <div class="box" id="box4">
+            	<div class="transbox">
+                <h2>Who Are We?</h2>
+                <p>We are a Portfolio Management company with expertise and experienced team-members who are willing to assist you. With easy to understand plans.</p>
+                 <p>We offer you interest rate on-par with the biggest players in the market while maintaining a low service charge.</p>
+                </div>
+            </div>
+            
+            <div class="box" id="box5">
+             <div class="transbox">
+                <h2>What Service We Can Offer?</h2>
+                <p>We have investment opportunities in a variety of industries like entertainment, hospitality, wellness etc.</p>
+                <p> We offer our asset-backed securities against the Portfolio you provide to us to manage.</p>
+                </div>
+            </div>
+            
+            <div class="box" id="box6">
+            <div class="transbox">
+                <h2>Still Thinking?</h2>
+                <p>With our asset-locked benefits, there is no need to worry about your investments with us. People can run away with money, but not with a piece of land!</p>
+                <p>"Don't be hesitant! We are here to help you achieve your goals by building long-lasting relationships. Come, join the DKGA family!"</p>
+            </div></div>
+            
+            
+        </div>
+        <div class="clear"></div><div class="space"></div>
+        <div class="foot">
+            <div class="footer">
+                <div class="box" id="box7">Copyright &copy; 2015 DKGA Enterprises Pvt. Ltd. All Rights Reserved. | Designed by <a href="http://webcreatic.com" target="_blank">WebCreatic</a></div>
+            </div>
+        </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+$('.bxslider').bxSlider({
+  mode: 'fade',
+  captions: true,
+  auto: true,
+});
+  });
+</script>        
+    </body>
+</html>
